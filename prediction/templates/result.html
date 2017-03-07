@@ -1,0 +1,9 @@
+<img src="{{ img }}" style="float:left">
+<div style="float: left">
+    <ol style="list-style-type: decimal">
+        <li><a href="http://danbooru.donmai.us/wiki_pages/show_or_new?title={{ top_prediction }}" style="margin-right: 10px">?</a><a href="http://danbooru.donmai.us/posts?tags={{ top_prediction }}" style="font-size: 200%">{{ top_prediction }}</a></li>
+        {% for c in predictions %}
+            <li><a href="http://danbooru.donmai.us/wiki_pages/show_or_new?title={{ c }}" style="margin-right: 10px">?</a><a href="http://danbooru.donmai.us/posts?tags={{ c }}">{{ c }}</a></li>
+        {% endfor %}
+    </ol>
+</div>

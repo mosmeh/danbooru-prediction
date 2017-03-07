@@ -1,0 +1,15 @@
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<h1>Character Prediction</h1>
+<p>from {{ num_characters }} characters</p>
+<form id="form" method="post" action="result" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>
+        <label for="url">URL:</label>
+        <input type="text" name="url" id="url">
+    </p>
+    <p>
+        <label for="img">Upload image:</label>
+        <input type="file" name="img" id="img">
+    </p>
+    <input type="submit" value="Predict">
+</form>
